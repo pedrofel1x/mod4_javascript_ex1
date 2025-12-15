@@ -29,18 +29,16 @@
             paises.push("Espanha");
 
             console.log(paises);
-            
-
-            console.log(paises.slice(numeroPaises()-3)); 
 
             // Faz console.log dos 3 últimos itens do array, usando apenas uma função;
 
             console.log(paises.slice(numeroPaises()-3)); // usei a função dos numerospaises em vez do length
+
             function last3(){
                 return paises.slice(-3);
             }
 
-            
+            console.log(paises.join("-"));
         </script>
     </body>
 </html>
