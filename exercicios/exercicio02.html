@@ -1,4 +1,4 @@
-<DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en">
     <meta charset="UTF-8">
     <head>
@@ -23,7 +23,7 @@
 
             function calculoDesc(preco, desc) {
                 if (desc > 0 && desc < 10){
-                    return (preco*desc/100);
+                    return preco + (preco*desc/100);
                 } else if (desc >= 10 && desc <= 30) {
                     return preco - (preco*desc/100);
                 } else if (desc === 0) {
