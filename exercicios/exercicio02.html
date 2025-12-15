@@ -6,15 +6,23 @@
     <body>
         <script>
 
+            
+            // 
+            /* Cria uma função que:
+                - Aceite 2 argumentos: preço e desconto;
+                - Se o desconto for menor que 10%, retorna o valor mais o desconto;
+                - Se o desconto for maior que 10% mas inferior a 30%, retorna o valor menos o desconto;
+                - Se o desconto for 0, retorna a multiplicação do valor por 2; */
 
+            /*
             const valor = prompt("Insira o valor do produto: ");
             const desconto = prompt("Insira o desconto: ");
 
             calculoDesc(valor, desconto);
-
+            */
 
             function calculoDesc(preco, desc) {
-                if (desc < 10){
+                if (desc > 0 && desc < 10){
                     return (preco*desc/100);
                 } else if (desc >= 10 && desc <= 30) {
                     return preco - (preco*desc/100);
